@@ -1,0 +1,107 @@
+@font-face{
+    font-family: myFont;
+    src: url(HorizonMountain.ttf);
+}
+
+body {
+    background-color: #CDD6FA;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 28px;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+   justify-content: center;
+    background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+
+}
+
+.auth-form-container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #418B3D ;
+  
+  
+}
+.clearBTN {
+    width: 400px;
+    border-radius: 5px;
+    background-image: linear-gradient(60deg, #64b3f4 0%, #c2e59c 100%);
+}
+.container {
+   
+    margin-top: 30px;
+    border: 1px solid whitesmoke;
+}
+
+.lottie {
+    height: 200px;
+    width: auto;
+}
+
+
+.checkmarkIcon {
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 2px;
+    height: 55px;
+    width: auto;
+}
+
+label {
+    margin-top: 20px;
+   
+  
+}
+
+input {
+    border: none;
+}
+
+.checkbox1 {
+    accent-color: #418B3D;
+    margin-right: 25px;
+    height: 33px;
+    width: 33px;
+    border-radius: 5px;
+}
+
+.applyDiv {
+    margin: 25px;
+}
+
+.textinput {
+    border-radius: 7px;
+    width: 75%;
+    margin-bottom: 15px;
+   
+}
+.logininput {
+    border-radius: 7px;
+}
+
+.link-btn {
+    background: none;
+    text-decoration:underline;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.addBTN {
+    background-color: #c2e59c;
+    color:#418B3D;
+    border-radius: 5px;
+    
+}
+
+.title {
+    margin-top: 25px;
+    font-family: myFont;
+    font-size: 69px;
+}
+
+
+
+button {
+    cursor: pointer;
+}
