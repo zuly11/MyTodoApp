@@ -1,33 +1,11 @@
-const client = require('./client');
+const express = require('express');
+const cors = require("cors");
+const app = express();
 
-const syncTables = async () => {
-    try {
-        const SQL =`
-        DROP TABLE IF EXISTS users;
-        
-        CREATE TABLE users(
-            id SERIAL PRIMARY KEY,
-            username VARCHAR(100) UNIQUE NOT NULL,
-            password VARCHAR(100) NOT NULL,
-            email VARCHAR(100),
-            "phoneNumber" VARCHAR(100),
-            streetAddress VARCHAR(255),
-            cityAddress VARCHAR(255),
-            zipcode VARCHAR(100)
-        );
-        
-        
-        
-        `;
-        await client.query(SQL);
+//middleware
+app.use(cors());
+app.use(express.json());
 
-
-    } catch (error) {
-      throw error;
-    }
-};
-
-
-module.exports = {
-    client,
-}
+app.listen(3000, () => {
+    console.log("server has started on port 3000");
+});

@@ -2,7 +2,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 
 import TodoList from './TodoList';
-import uuidv4 from 'uuid/dist/v4';
+import uuidv4 from '../node_modules/uuid/dist/v4.js';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckDouble } from '@fortawesome/free-solid-svg-icons';
 import { Container } from 'react-bootstrap';
