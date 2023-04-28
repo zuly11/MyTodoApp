@@ -75,7 +75,7 @@ const Register = () => {
             } else if (err.response?.status === 409) {
                 setErrMsg('Username Taken');
             } else {
-                setErrMsg('Registration Failed')
+                setErrMsg('Registration Failed 404 error')
             }
             errRef.current.focus();
         }
